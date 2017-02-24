@@ -1,0 +1,34 @@
+List the components of hadoop2.X and explain each component in detail.
+    1 Yarn
+    2 HDFS
+    3 Map Reduce
+ 
+
+  * Yarn:
+       - Yarn is  Yet Another Resource negotiator
+       - Yarn is used to split up the rfuctionalities of resource managemnt and job scheduling into seperate daemons.
+       - It is one of the key features of the hadoop.
+       - It is a large scale distributed operating system.
+  * HDFS:
+      - HDFS is a java based file system and it provides scalable and reliable data storage.
+      - HDFs splits the file into smaller files before processing and files are also replicated into different servers.
+      - HDFS allows Multiple Name nodes.
+      - Namenode and datanode are used by users to check the status of clusters.
+      - Hadoop 2.x allows HDFS to be in available in which it is active and stand by name node. 
+      - Streaming data access,Huge datasets,fault detection and recovery are goals of hdfs.
+  * Map Reduce:
+      - Map Reduce is used for scheduling and processing the data.
+      - Map and Reduce are two important functions in MapReduce.
+      - Resource manager and node manager are important components in Map Reduce
+      - Resource Manager:
+         * This process runs on master node.
+         * It's Main responsibility is to make client to submit it's job and to monitor jobs on cluster.
+         * It allocates Proper resources to slave node.
+         * It talks with Node manager to know the resource utilization.
+      - Node Manager:
+         * This process runs on slave node.
+         * It makes resoucre manger to do resource utilization and job scheduling.
+         * It reports resource manager about resource utilization.
+         * It uses some other process like application master and container to do map reduce jobs.
+
+          
